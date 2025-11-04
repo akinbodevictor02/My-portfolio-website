@@ -1,0 +1,131 @@
+/* ==== Global Styles ==== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+/* ===== Header Section ===== */
+header {
+    background-color: #1e3a8a;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #facc15;
+    color: #1e3a8a;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #fbbf24;
+    transform: scale(1.05);
+}
+/* ===== Section Styles ===== */
+section {
+    padding: 60px 20px;
+text-align: center;
+max-width: 800px;
+margin: 0 auto;
+animation: fadeIn 1.5s ease-in-out, slideUp 1.5s ease-in-out;
+}
+h2 {
+    color: #1e3a8a;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #facc15;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+/* ===== About Section ===== */
+#about p {
+    font-size: 1rem;
+    color: #444;
+    margin-top: 10px;
+}
+/* ===== Skills Section ===== */
+#skills ul {
+    list-style: none;
+    margin-top: 20px;
+}
+#skill li {
+    display: inline-block;
+background-color: #2563eb;
+color: white;
+margin: 8px;
+padding: 10px 20px;
+border-radius: 8px;
+font-weight: bold;
+}
+
+/* ===== Contact Section ===== */
+#contact ul {
+    list-style: none;
+    margin-top: 15px;
+}
+#contact a {
+    color: #2563eb;
+    text-decoration: underline;
+}
+#contact a:hover {
+    text-decoration: underline;
+}
+/* ===== Footer ===== */
+footer {
+    background-color: #1e3a8a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+/* ===== Responsive Design ===== */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    section {
+        padding: 40px 15px;
+    }
+}
+/* ===== Animations ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
